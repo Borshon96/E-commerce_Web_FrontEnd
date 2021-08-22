@@ -491,6 +491,7 @@ p{
     -webkit-transition:all 0.4s ease-in-out 0s;
     transition:all 0.4s ease-in-out 0s;
     background:var(--bg-danger);
+    padding-top: 0.5vh;
 }
 #scrollUp span{
     line-height: 2.625rem;
@@ -500,7 +501,7 @@ p{
 }
 .bi-arrow-up{
     color: white;
-    font-size: 4.5vh;
+    font-size: 4vh;
 }
 /* Footer CSS */
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);

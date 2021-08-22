@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single Product E-Commerce Website Using Bootstap 5</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Themify Icons -->
+    <!-- <link rel="stylesheet" href="assets/css/themify-icons.css">  -->
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive 5 css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- single product -->
+    <link rel="stylesheet" href="./assets/css/productDetail.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation Section  -->
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" class="img-fluid" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="productDetail.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#social">Social</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- SINGLE PRODUCT PAGE -->
+    <div class="container mt-5 pt-5">
+      <div class="row mt-5 mb-5">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-lg-12 mb-2">
+              <!-- <img class="spb" src="./assets/images/sp1.png" alt="sp1"> -->
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner spb">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/sp1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/sp1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/sp1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img class="spb" src="./assets/images/sp2.png" alt="sp2" />
+            </div>
+            <div class="col-lg-4">
+              <img class="spb" src="./assets/images/sp3.png" alt="sp3" />
+            </div>
+            <div class="col-lg-4">
+              <img class="spb" src="./assets/images/sp4.png" alt="sp4" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <i class="bi bi-star-fill star_clr"></i>
+          <i class="bi bi-star-fill star_clr"></i>
+          <i class="bi bi-star-fill star_clr"></i>
+          <i class="bi bi-star-half star_clr"></i>
+          <i class="bi bi-star star_clr"></i>
+          <h2 class="h2style">Dangerous Strawberry</h2>
+          <h4 class="h4style pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut in quod, amet corporis omnis sint sed debitis enim facilis saepe quaerat recusandae necessitatibus reiciendis accusantium explicabo minus! Voluptatem, molestiae.</h3>
+            <div class="price mt-4">
+                <p class="tag">PRICE:</p>
+                <p class="regular">$550</p>
+                <p class="offer">$490</p>
+            </div>
+            <a href="#" class="btn btn-danger btn-lg mt-4"><i class="bi bi-cart3"></i> Add to cart</a>
+            <p class="spec mt-4">Brand: <span class="spec_det">Apple</span></p>
+            <p class="spec mt-4">Product Code: <span class="spec_det">AXC123</span></p>
+            <p class="spec mt-4">Reward Point: <span class="spec_det">100</span></p>
+            <p class="spec mt-4">Availability: <span class="spec_det">In Stock</span></p>
+        </div>
+      </div>
+      <div>
+          <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Specification</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Reviews</button>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content mb-5">
+            <div class="tab-pane active pt-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there's no limit to what you can achieve.
+                The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it's designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data.
+                Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple's ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications.
+                Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment.
+                The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.
+            </div>
+            <div class="tab-pane pt-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="tab-pane pt-3" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                <div>
+                    <span class="heading">User Rating</span>
+                    <i class="bi bi-star-fill star_clr"></i>
+                    <i class="bi bi-star-fill star_clr"></i>
+                    <i class="bi bi-star-fill star_clr"></i>
+                    <i class="bi bi-star-half star_clr"></i>
+                    <i class="bi bi-star star_clr"></i>
+                    <p>4.1 average based on 254 reviews.</p>
+                    <hr style="border:3px solid #f1f1f1">
+
+                    <div class="row">
+                    <div class="side">
+                        <div>5 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>150</div>
+                    </div>
+                    <div class="side">
+                        <div>4 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>63</div>
+                    </div>
+                    <div class="side">
+                        <div>3 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>15</div>
+                    </div>
+                    <div class="side">
+                        <div>2 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>6</div>
+                    </div>
+                    <div class="side">
+                        <div>1 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-1"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>20</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- related product -->
+        <div class="headline text-center mb-5">
+            <h2 class="pb-3 position-relative d-inline-block header1">Related Product</h2>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rp row">
+                    <div class="col-sm-4">
+                        <img src="./assets/images/sp2.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>hello bro</h5>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-half star_clr2"></i>
+                        <i class="bi bi-star star_clr2"></i>
+                        <p>$450 <span class="lt">$500</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rp row">
+                    <div class="col-sm-4">
+                        <img src="./assets/images/sp2.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>hello bro</h5>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-half star_clr2"></i>
+                        <i class="bi bi-star star_clr2"></i>
+                        <p>$450 <span class="lt">$500</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rp row">
+                    <div class="col-sm-4">
+                        <img src="./assets/images/sp2.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>hello bro</h5>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-half star_clr2"></i>
+                        <i class="bi bi-star star_clr2"></i>
+                        <p>$450 <span class="lt">$500</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rp row">
+                    <div class="col-sm-4">
+                        <img src="./assets/images/sp2.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>hello bro</h5>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-half star_clr2"></i>
+                        <i class="bi bi-star star_clr2"></i>
+                        <p>$450 <span class="lt">$500</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rp row">
+                    <div class="col-sm-4">
+                        <img src="./assets/images/sp2.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>hello bro</h5>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-half star_clr2"></i>
+                        <i class="bi bi-star star_clr2"></i>
+                        <p>$450 <span class="lt">$500</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rp row">
+                    <div class="col-sm-4">
+                        <img src="./assets/images/sp2.png" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>hello bro</h5>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-fill star_clr2"></i>
+                        <i class="bi bi-star-half star_clr2"></i>
+                        <i class="bi bi-star star_clr2"></i>
+                        <p>$450 <span class="lt">$500</span></p>
+                        <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- related product end -->
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-area footer--light">
+      <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="footer-widget">
+                <div class="widget-about">
+                  <img src="assets/images/logo.png" alt="" class="img-fluid" />
+                  <p>
+                    Что если тут написать другой текст на русском языке, для
+                    проверки шрифта Rubik )
+                  </p>
+                  <ul class="contact-details">
+                    <li>
+                      <span class="icon-earphones"></span> Call Us:
+                      <a href="tel:344-755-111">344-755-111</a>
+                    </li>
+                    <li>
+                      <span class="icon-envelope-open"></span>
+                      <a href="mailto:support@aazztech.com"
+                        >support@aazztech.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-md-4 -->
+            <div class="col-md-3 col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu footer-menu--1">
+                  <h4 class="footer-widget-title">Popular Category</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Wordpress</a>
+                    </li>
+                    <li>
+                      <a href="#">Plugins</a>
+                    </li>
+                    <li>
+                      <a href="#">Joomla Template</a>
+                    </li>
+                    <li>
+                      <a href="#">Admin Template</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML Template</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-md-3 -->
+
+            <div class="col-md-3 col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu">
+                  <h4 class="footer-widget-title">Our Company</h4>
+                  <ul>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">How It Works</a>
+                    </li>
+                    <li>
+                      <a href="#">Affiliates</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Plan &amp; Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-lg-3 -->
+
+            <div class="col-md-3 col-sm-4">
+              <div class="footer-widget">
+                <div class="footer-menu no-padding">
+                  <h4 class="footer-widget-title">Help Support</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Support Forum</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Support Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Refund Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#">Buyers Faq</a>
+                    </li>
+                    <li>
+                      <a href="#">Sellers Faq</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- Ends: .col-lg-3 -->
+          </div>
+          <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+      </div>
+      <!-- end /.footer-big -->
+
+      <div class="mini-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>
+                  © 2018 <a href="#">DigiPro</a>. All rights reserved. Created
+                  by
+                  <a href="#">AazzTech</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Backt To Top -->
+    <div id="scrollUp" title="Scroll To Top">
+      <a href="#home"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <!-- Bootstrap 5 js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
