@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Background Color */
+  --bg-danger: #f63440;
+  --bg-white: #fff;
+  --bg-light-white: #f5f5f5;
+
+  /* Text Color */
+  --primary-font: "Poppins", sans-serif;
+  --text-white: #fff;
+  --text-black: #121212;
+  --text-danger: #f63440;
+  --text-gray: #aaa;
+  --text-dark-gray: #777;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  background: var(--bg-white);
+  color: var(--text-black);
+  overflow-x: hidden;
+}
+
+/* prod css */
+.prod_img {
+  max-height: 6vh;
+}
+
+/* Counter */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.counter input {
+  width: 50px;
+  border: 0;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: #0052cc;
+  color: #fff;
+  appearance: none;
+  outline: 0;
+}
+.counter span {
+  display: block;
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #0052cc;
+  user-select: none;
+}
+.bi-trash-fill {
+  font-size: 1.4rem;
+}
+.checkoutCart {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.chkoutbtn {
+  width: 26%;
+}
+.cartTotal {
+  display: flex;
+  flex-direction: column;
+}
+.subTotal {
+  display: flex;
+  justify-content: space-between;
+}
+/* related product */
+.rp {
+    height: 16vh;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 5px 7px 0px #f3eded;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .rp:hover {
+    box-shadow: 0px 1px 1px 0px #f3eded;
+    transition: 0.2s ease-in;
+  }
+  .star_clr2 {
+    font-size: 0.6rem;
+    color: gold;
+  }
+  .lt {
+    text-decoration: line-through;
+  }
+  .showMore{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  

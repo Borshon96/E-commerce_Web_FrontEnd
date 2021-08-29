@@ -224,3 +224,8 @@ body {
 .lt {
   text-decoration: line-through;
 }
+.showMore{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}

@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-:root{ 
-    /* Background Color */
-    --bg-danger:#f63440;
-    --bg-white:#fff;
-    --bg-light-white:#f5f5f5;
+:root {
+  /* Background Color */
+  --bg-danger: #f63440;
+  --bg-white: #fff;
+  --bg-light-white: #f5f5f5;
 
-    /* Text Color */
-    --primary-font:"Poppins", sans-serif;
-    --text-white:#fff;
-    --text-black:#121212; 
-    --text-danger:#f63440; 
-    --text-gray:#aaa;
-    --text-dark-gray:#777;
-}  
+  /* Text Color */
+  --primary-font: "Poppins", sans-serif;
+  --text-white: #fff;
+  --text-black: #121212;
+  --text-danger: #f63440;
+  --text-gray: #aaa;
+  --text-dark-gray: #777;
+}
 body {
-    font-family: var(--primary-font);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.75rem;
-    background:var(--bg-white);
-    color: var(--text-black);
-    overflow-x:hidden;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  background: var(--bg-white);
+  color: var(--text-black);
+  overflow-x: hidden;
 } 
 
 /* Custom CSS */
@@ -60,6 +60,22 @@ p{
 }
 
 /* Navigation CSS */
+.badge {
+    display: inline-block;
+    padding: .35em .65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    position: relative;
+    bottom: 9px;
+    right: 4px;
+    background-color: red;
+    border-radius: 50%;
+}
 #header .fixed-top {
     box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
 }
